@@ -1,12 +1,27 @@
-<script setup>
+<template>
+  <!-- <nav>
+    <router-link to="/">Home</router-link>&nbsp;
+  </nav> -->
+<div class="w-full h-screen p-4">
+    <router-view class="" />
+</div>
+ 
+</template>
 
+<script>
+export default {
+  name: "App",
+};
 </script>
 
-<template>
-<div class="bg-blue-500">
-  <h1>APP</h1>
-</div>
-</template>
+<script setup>
+const switchTema =() =>{
+  let objetivo = document.querySelector('html')
+  objetivo.classList.toggle("dark")
+
+}
+
+</script>
 
 <style>
 #app {
