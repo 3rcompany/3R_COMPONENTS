@@ -1,24 +1,30 @@
 <template>
-  <div class=" w-full h-full dark:bg-blue-300  flex flex-row items-center  justify-start overflow-y-auto">
-    <div class="w-64 bg-blue-400 h-96 rounded mr-4 sticky top-0">
+<Navbar class="sticky top-0"/>
+  <div class=" w-full flex flex-row items-start  justify-start px-2">
+    <home-selector-arbol></home-selector-arbol>
 
-    </div>
-
-    <div class="bg-blue-600 self-start justify-self-center contenedor">
+    <div class="bg-white self-start justify-self-center contenedor">
       <h1>Contenido</h1>
+      <Iconos icono="bag" strokew="1.5"></Iconos>
     </div>
   </div>
 </template>
 
+
+
 <script>
+import HomeSelectorArbol from '../components/HomeSelectorArbol.vue';
+import Navbar from "../components/Navbar.vue";
+import Iconos from '../components/Iconos.vue';
 export default {
-  name: "Home",
+    name: "Home",
+    components: { Navbar, HomeSelectorArbol, Iconos }
 };
 </script>
 
 <style scoped>
 .contenedor{
-  min-height: 10vh;
+  /* min-height: 50vh; */
   width: 100%;
 }
 </style>

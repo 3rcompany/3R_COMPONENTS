@@ -1,11 +1,5 @@
 <template>
-  <!-- <nav>
-    <router-link to="/">Home</router-link>&nbsp;
-  </nav> -->
-<div class="w-full h-screen p-4">
-    <router-view class="" />
-</div>
- 
+  <router-view />
 </template>
 
 <script>
@@ -15,9 +9,10 @@ export default {
 </script>
 
 <script setup>
-const switchTema =() =>{
+const switchTema = () => {
   let objetivo = document.querySelector('html')
   objetivo.classList.toggle("dark")
+  objetivo.classList.toggle("light")
 
 }
 
@@ -30,5 +25,10 @@ const switchTema =() =>{
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  
+}
+
+.light{
+  background-color: #fafafe;
 }
 </style>
