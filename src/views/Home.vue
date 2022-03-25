@@ -5,7 +5,6 @@
 
     <div class="bg-white self-start justify-self-center contenedor">
       <h1>Contenido</h1>
-      <Iconos icono="bag" strokew="1.5"></Iconos>
     </div>
   </div>
 </template>
